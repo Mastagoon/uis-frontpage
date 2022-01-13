@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/d15368784d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            keyframes: {
+              slideUp: {
+                "0%": {
+                  transform: "translateY(1000px)",
+                  opaicty: "0",
+                },
+                "100%": {
+                  transform: "translateY(0)",
+                  opacity: "1",
+                },
+              },
+            },
+            animation: {
+              slideUp: "slideUp 600ms ease-in-out",
+            },
+          },
+        },
+      }
+    </script>
+    <title>page1</title>
+  </head>
+  <nav
+    class="bg-white h-10 flex flex-row items-center justify-between self-center"
+  >
+    <a href="#" class="logo">My College</a>
+    <p>test</p>
+  </nav>
+  <body dir="rtl" class="bg-[#E5F1FF] container mx-auto px-4 h-screen">
+    <h1 class="text-4xl font-bold my-10 text-right mb-20">أهلاً بعودتك</h1>
+
+    <div class="grid grid-cols-12 gap-1 h-1/2 animate-slideUp">
+      <div class="col-span-6 flex flex-col justify-center items-center">
+        <img class="animate-pulse" src="/wedo.png" alt="" />
+      </div>
+      <div class="col-span-6 grid grid-cols-9 gap-1">
+        <div
+          class="col-span-3 flex-col flex items-center justify-center text-white bg-blue-400 hover:scale-105 cursor-pointer transition-all duration-500 rounded-md"
+        >
+          <i class="fas fa-book"></i>
+          <div class="text-center">لوحة التحكم</div>
+        </div>
+        <div
+          class="col-span-3 flex-col flex items-center justify-center text-white bg-blue-400 hover:scale-105 cursor-pointer transition-all duration-500 rounded-md"
+        >
+          <i class="fas fa-book"></i>
+          <div class="text-center">التحصيل المالي</div>
+        </div>
+        <div
+          class="col-span-3 flex-col flex items-center justify-center text-white bg-blue-400 hover:scale-105 cursor-pointer transition-all duration-500 rounded-md"
+        >
+          <i class="fas fa-book"></i>
+          <div class="text-center">النتيجة</div>
+        </div>
+
+        <div
+          class="col-span-3 flex-col flex items-center justify-center text-white bg-blue-400 hover:scale-105 cursor-pointer transition-all duration-500 rounded-md"
+        >
+          <i class="fas fa-book"></i>
+          <div class="text-center">E-Learning</div>
+        </div>
+        <div
+          class="col-span-3 flex-col flex items-center justify-center text-white bg-blue-400 hover:scale-105 cursor-pointer transition-all duration-500 rounded-md"
+        >
+          <i class="fas fa-book"></i>
+          <div class="text-center">المكتب الأكاديمي</div>
+        </div>
+        <div
+          class="col-span-3 flex-col flex items-center justify-center text-white bg-blue-400 hover:scale-105 cursor-pointer transition-all duration-500 rounded-md"
+        >
+          <i class="fas fa-book"></i>
+          <div class="text-center">الطلاب</div>
+        </div>
+        <div
+          class="col-span-3 flex-col flex items-center justify-center text-white bg-blue-400 hover:scale-105 cursor-pointer transition-all duration-500 rounded-md"
+        >
+          <i class="fas fa-book"></i>
+          <div class="text-center">الإعدادات</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
